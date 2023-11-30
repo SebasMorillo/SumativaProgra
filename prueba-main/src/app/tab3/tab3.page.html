@@ -1,0 +1,144 @@
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Chonburi&display=swap" rel="stylesheet"> 
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fasthand&display=swap" rel="stylesheet"> 
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz@8..144&display=swap" rel="stylesheet">
+<ion-content>
+<div class="header_top">
+
+<div class="background">
+  <div class="layer"></div>
+  <ion-img class="img_back" src="https://img.freepik.com/fotos-premium/restaurante-comida-rapida-equipo-cocina_180947-539.jpg"></ion-img>
+</div>
+
+  <ion-button fill="clear" routerLink="/tabs/tab2">
+  <ion-icon color="light" class="icon-left" size="large" name="arrow-back"></ion-icon>
+
+</ion-button>
+<ion-button id="carte" fill="clear">
+  <ion-icon color="light"  class="icon-right" size="large" name="cart"></ion-icon>
+  
+</ion-button>
+<ion-alert
+  trigger="carte"
+  header="¡No tienes ningun producto!"
+  message="Ve en nuestro amplio catálogo algo que te encante"
+  [buttons]="alertButtons"
+></ion-alert>
+</div>
+
+<div class="header_middle">
+
+  <ion-label class="header_seccion">Hamburguesas</ion-label>
+  <ion-label class="header_name">FastFood</ion-label>
+
+</div>
+
+
+
+
+
+  <ion-grid [fixed]="true" class="header_bottom_grid">
+    <ion-row class="row">
+      <ion-col  >
+        <ion-fab class="btn_left">
+          <ion-fab-button  color="danger">
+            <ion-icon expand="full" name="arrow-back"></ion-icon>
+          </ion-fab-button>
+        </ion-fab>
+      </ion-col >
+      <ion-col size="8">
+        <ion-img class="header_img" src="https://burgerkingec.com/wp-content/uploads/2022/11/web_Mesa-de-trabajo-1-1.png" alt="hamburgessas"> </ion-img>
+      </ion-col>
+      <ion-col>
+        <ion-fab class="btn_right">
+          <ion-fab-button color="danger">
+            <ion-icon expand="full" name="arrow-forward"></ion-icon>
+          </ion-fab-button>
+        </ion-fab>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  
+
+
+
+<div class="hamb_opt">
+
+  <ion-card class="option">
+    <img class="imagen" alt="Silhouette of mountains" src="https://static.vecteezy.com/system/resources/previews/022/911/694/non_2x/cute-cartoon-burger-icon-free-png.png" />
+    <ion-card-header>
+      <ion-card-title class="names">Hambuerguesa Clásica</ion-card-title>
+      <ion-card-subtitle>$3.00</ion-card-subtitle>
+    </ion-card-header>
+    <ion-button fill="clear" id="comp1">Comprar</ion-button>
+
+    <ion-toast color="success" trigger="comp1" message="Producto agregado al carrito de compras" icon="checkmark-circle-outline" size="large" [duration]="3000"></ion-toast>
+  </ion-card>
+
+  <ion-card class="option">
+    <img class="imagen"  alt="Silhouette of mountains" src="https://static.vecteezy.com/system/resources/previews/023/358/433/non_2x/burger-with-meat-tomato-lettuce-cheese-and-sauce-ai-generated-png.png" />
+    <ion-card-header>
+      <ion-card-title class="names">Hambuerguesa Vegana</ion-card-title>
+      <ion-card-subtitle>$3.00</ion-card-subtitle>
+    </ion-card-header>
+    <ion-button fill="clear" id="comp2">Comprar</ion-button>
+    <ion-toast color="success" trigger="comp2" message="Producto agregado al carrito de compras" icon="checkmark-circle-outline" size="large" [duration]="3000"></ion-toast>
+
+  </ion-card>
+
+  <ion-card class="option">
+    <img  class="imagen" alt="Silhouette of mountains" src="https://images.jifo.co/40819085_1554771467354.png" />
+    <ion-card-header>
+      <ion-card-title class="names one">Hambuerguesa de Tocino</ion-card-title>
+      <ion-card-subtitle>$3.00</ion-card-subtitle>
+    </ion-card-header>
+    <ion-button fill="clear" id="comp3">Comprar</ion-button>
+    <ion-toast color="success" trigger="comp3" message="Producto agregado al carrito de compras" icon="checkmark-circle-outline" size="large" [duration]="3000"></ion-toast>
+
+  </ion-card>
+
+  <ion-card class="option">
+    <img class="imagen"  alt="Silhouette of mountains" src="https://tofuu.getjusto.com/orioneat-local/resized2/sL4zujsdDNDthwXhF-1200-1200.webp" />
+    <ion-card-header>
+      <ion-card-title class="names">Hamburguesa Aros de Cebolla</ion-card-title>
+      <ion-card-subtitle>$3.00</ion-card-subtitle>
+    </ion-card-header>
+    <ion-button fill="clear" id="comp4">Comprar</ion-button>
+    <ion-toast color="success" trigger="comp4" message="Producto agregado al carrito de compras" icon="checkmark-circle-outline" size="large" [duration]="3000"></ion-toast>
+
+  </ion-card>
+
+  <ion-card class="option" >
+    <img class="imagen"  alt="Silhouette of mountains" src="https://static.vecteezy.com/system/resources/previews/021/217/141/non_2x/chicken-burger-with-lettuce-png.png" />
+    <ion-card-header>
+      <ion-card-title class="names">Hamburguesa de Pollo</ion-card-title>
+      <ion-card-subtitle>$3.00</ion-card-subtitle>
+    </ion-card-header>
+    <ion-button fill="clear" id="comp5">Comprar</ion-button>
+    <ion-toast color="success" trigger="comp5" message="Producto agregado al carrito de compras" icon="checkmark-circle-outline" size="large" [duration]="3000"></ion-toast>
+
+  </ion-card>
+
+  <ion-card class="option">
+    <img class="imagen"  alt="Silhouette of mountains" src="https://static.vecteezy.com/system/resources/previews/027/546/580/non_2x/fresh-fishburger-isolated-png.png" />
+    <ion-card-header>
+      <ion-card-title class="names">Hambuerguesa de Pescado</ion-card-title>
+      <ion-card-subtitle>$3.00</ion-card-subtitle>
+    </ion-card-header>
+    <ion-button fill="clear" id="comp6">Comprar</ion-button>
+    <ion-toast color="success" trigger="comp6" message="Producto agregado al carrito de compras" icon="checkmark-circle-outline" size="large" [duration]="3000"></ion-toast>
+
+  </ion-card>
+
+</div>
+
+
+</ion-content>
